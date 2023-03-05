@@ -1,15 +1,15 @@
 [[MIT Licence](https://en.wikipedia.org/wiki/MIT_License)]
 
 
-![alt text](https://raw.githubusercontent.com/sorzkode/BATlister/master/assets/BATlister.jpg)
+![alt text](https://raw.githubusercontent.com/sorzkode/BATlister/master/BATlister.jpg)
 
 ## BATlister
 BATlister is a simple batch script for Windows that generates a list of all files in a given directory and saves it to a text file.
 
 ## Example
 
-![alt text](https://raw.githubusercontent.com/sorzkode/BATlister/master/assets/example.jpg)
-![alt text](https://raw.githubusercontent.com/sorzkode/BATlister/master/assets/example2.jpg)
+![alt text](https://raw.githubusercontent.com/sorzkode/BATlister/master/example.jpg)
+![alt text](https://raw.githubusercontent.com/sorzkode/BATlister/master/example2.jpg)
 
 ## Requirements
 Windows operating system
