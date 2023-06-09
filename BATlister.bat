@@ -23,8 +23,20 @@
 echo BATlister Script
 echo Create a .txt list of all files in a given directory
 echo ...
+
 set /p directory="Enter the directory path: "
+
+if not exist "%directory%" (
+    echo Invalid directory path. Exiting...
+    exit /b
+)
+
 set /p save_location="Enter the save location and file name (e.g. C:\filelist.txt): "
+
+if not exist "%~dpnxsave_location%" (
+    echo Invalid save location path. Exiting...
+    exit /b
+)
 
 echo Generating your file list...
 
