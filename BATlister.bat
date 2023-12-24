@@ -24,6 +24,7 @@ echo BATlister Script
 echo Create a .txt list of all files in a given directory
 echo ...
 
+:loop
 :: Get directory path
 set /p directory="Enter the directory path (or press Enter to use the script file path): "
 if "%directory%"=="" set "directory=%~dp0"
@@ -31,7 +32,7 @@ if "%directory%"=="" set "directory=%~dp0"
 :: Check if directory exists
 if not exist "%directory%" (
   echo Invalid directory path. Exiting...
-  exit /b
+  exit /b 1
 )
 
 :: Get save location
@@ -41,10 +42,9 @@ if "%save_location%"=="" set "save_location=%directory%\BATlister_output.txt"
 :: Check if save location exists
 if not exist "%~dpnxsave_location%" (
   echo Invalid save location path. Exiting...
-  exit /b
+  exit /b 1
 )
 
-:: Check if save location is a directory
 echo Generating your file list...
 
 :: Get file count
@@ -69,6 +69,11 @@ dir /b "%directory%">>"%save_location%"
 
 :: End
 echo %save_location% successfully created
-echo Press any key to exit
+echo Press Enter to create another list or any other key to exit
 
-pause>nul
+set /p continue=
+if "%continue%"=="" (
+  cls
+  goto loop
+)
+
