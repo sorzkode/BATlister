@@ -1,12 +1,8 @@
 # BATlister
 
-BATlister is a simple batch script for Windows that generates a list of all files in a given directory and saves it to a text file.
+BATlister is a simple batch script for Windows that generates a list of all files and folders in a given directory and saves it to a text file.
 
 ![BATlister](https://raw.githubusercontent.com/sorzkode/BATlister/master/BATlister.jpg)
-
-## Description
-
-BATlister is a versatile tool that enables you to effortlessly generate a comprehensive list of files in a specific directory and save it to a text file. It can be utilized for various purposes, including inventory management, file analysis, or creating file lists for documentation.
 
 ## Example
 
