@@ -6,8 +6,8 @@ BATlister is a batch script for Windows that generates a comprehensive list of a
 
 ## Example
 
-![Example](https://raw.githubusercontent.com/sorzkode/BATlister/master/example.jpg)
-![Example 2](https://raw.githubusercontent.com/sorzkode/BATlister/master/example2.jpg)
+![Example](https://raw.githubusercontent.com/sorzkode/BATlister/master/assets/example.jpg)  
+![Example 2](https://raw.githubusercontent.com/sorzkode/BATlister/master/assets/example2.jpg)  
 
 ## Requirements
 
