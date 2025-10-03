@@ -1,6 +1,6 @@
 # BATlister
 
-BATlister is a simple batch script for Windows that generates a list of all files and folders in a given directory and saves it to a text file.
+BATlister is a batch script for Windows that generates a comprehensive list of all files and folders in a given directory and saves it to a text file with detailed information.
 
 ![BATlister](https://raw.githubusercontent.com/sorzkode/BATlister/master/BATlister.jpg)
 
@@ -20,18 +20,22 @@ BATlister is a simple batch script for Windows that generates a list of all file
 
 ## Usage
 
-1. Open Command Prompt.
+1. Open Command Prompt (or run as Administrator if needed for certain directories).
 2. Navigate to the directory where the BATlister script is saved.
 3. Type `BATlister.bat` and press Enter.
-4. Follow the prompts to enter the directory path and the save location and file name for the text file.
+4. Follow the interactive prompts:
+   - Enter the directory path (or press Enter to use the script's location)
+   - Choose whether to include subdirectories (Y/N)
+   - Select listing format: Flat list (1) or Tree view (2)
+   - Enter the save location and file name (or press Enter for default)
 5. Wait for the script to generate the file list and save it to the text file.
+6. Press Enter to create another list, or type 'exit' to quit.
 
 ## Features
 
-- Lists all files in a given directory and saves them to a text file.
-- Displays the total number of files and the count of each file type in the text file.
-- Works on Windows operating systems.
-
-## License
-
-This project is licensed under the terms of the [MIT License](https://en.wikipedia.org/wiki/MIT_License). Please see the [LICENSE](License.md) file for more details.
+- **Recursive scanning**: Option to include subdirectories or scan only the target directory
+- **Multiple output formats**: Choose between flat list or tree view visualization
+- **Flexible output**: Specify custom save location or use default naming
+- **Error handling**: Validates directory paths and write permissions
+- **Loop functionality**: Create multiple lists without restarting the script
+- **Cross-platform paths**: Handles paths with or without trailing backslashes
